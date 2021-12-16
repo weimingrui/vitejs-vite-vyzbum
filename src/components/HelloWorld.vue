@@ -4,6 +4,7 @@ import { ref } from 'vue'
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+const baiduUrl = ref('https://www.baidu.com')
 </script>
 
 <template>
@@ -25,7 +26,7 @@ const count = ref(0)
     |
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
-
+<a :href="baiduUrl">Baidu</a>
   <button type="button" @click="count++">count is: {{ count }}</button>
   <p>
     Edit
